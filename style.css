@@ -6,3 +6,90 @@
     margin: 0;
     padding: 0;
 }
+
+.image-generator {
+    height: 45vh;
+    position: relative;
+    background: url("assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.image-generator::before {
+    position: absolute;
+    content: "";
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #121212;
+}
+
+.image-generator .content {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    max-width: 760px;
+    padding: 0 20px;
+}
+
+.image-generator h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.image-generator p {
+    margin-top: 15px;
+    font-size: 1.7rem;
+}
+
+.image-generator .generate-form {
+    width: 100%;
+    height: 60px;
+    border-radius: 25px;
+    background: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 45px 0 20px;
+}
+
+.generate-form .prompt-input {
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    background: none;
+    border: none;
+    padding: 0 10px;
+}
+
+.generate-form .controls {
+    height: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.generate-form .image-quantity {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+}
+
+.generate-form .generate-btn {
+    border: none;
+    outline: none;
+    background: #4141ca;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 30px;
+    cursor: pointer;
+    border-radius: 40px;
+}
