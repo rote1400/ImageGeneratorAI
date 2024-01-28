@@ -1,7 +1,7 @@
 const generateForm = document.querySelector(".generate-form");
 const imgGallery = document.querySelector(".img-gallery");
 
-const API_KEY = "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";
+const API_KEY = "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";
 let isImgGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
@@ -17,7 +17,7 @@ const updateImageCard = (imgDataArray) => {
        // When the image is generated, remove the loading class
        imgElement.onload = () => {
         imgCard.classList.remove("loading");
-        downloadBtn.setAttribute("href", aiGeneratedImg);
+        downloadBtn.href = aiGeneratedImg;
         downloadBtn.setAttribute("download", `${new Date().getTime()}.jpg`);
        }
     });

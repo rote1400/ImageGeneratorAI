@@ -1,2 +1,3 @@
 # ImageGeneratorAI
-## Website with AI-based API for image generation using HTML, CSS and JavaScript
+## Responsive website using OpenAI API for AI-based image generation
+## HTML, CSS and vanilla JavaScript
